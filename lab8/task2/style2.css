@@ -1,0 +1,22 @@
+  table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            width: 14.28%;
+            text-align: center;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        td {
+            background-color: #fff;
+        }
+        .weekend {
+            background-color: #FF0000; /* красный */
+        }
+        .holiday {
+            background-color: #FFF8DC; /* Желтый */
+        }
