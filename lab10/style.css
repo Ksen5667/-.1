@@ -1,0 +1,206 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif; /* Элегантный шрифт для театра */
+}
+
+body {
+    background-color: #1a1a1a; /* Темный фон, ассоциирующийся с театральными залами */
+    color: #f8f8f8; /* Светлый текст */
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+header {
+    background: #b40000; /* Красный цвет, ассоциирующийся с театральным занавесом */
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-family: 'Georgia', serif;
+}
+
+header h3 {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-top: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+nav {
+    background-color: #222;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+nav a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    color: #f1c40f; /* Золотой цвет для эффектов наведения */
+    text-decoration: underline;
+}
+
+.article {
+    background-color: #333;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.article h2 {
+    font-size: 2rem;
+    color: #f1c40f; /* Золотой цвет для заголовков */
+    margin-bottom: 15px;
+}
+
+.article p {
+    font-size: 1.2rem;
+    color: #e0e0e0;
+    line-height: 1.8;
+}
+
+.article .date {
+    font-size: 0.9rem;
+    color: #b0b0b0;
+    margin-top: 10px;
+}
+
+button, .button {
+    background-color: #b40000;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover, .button:hover {
+    background-color: #8e0000;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    background-color: #222;
+    color: #f8f8f8;
+}
+
+input[type="submit"] {
+    background-color: #b40000;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #8e0000;
+}
+
+a {
+    color: #f1c40f;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.comment {
+    background-color: #444;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.comment p {
+    font-size: 1rem;
+    color: #e0e0e0;
+}
+
+.comment .author {
+    font-size: 1.1rem;
+    color: #f1c40f;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #f1c40f;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-out;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header h3 {
+        font-size: 1rem;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    nav {
+        padding: 10px;
+    }
+
+    .article {
+        padding: 15px;
+    }
+
+    .comment {
+        padding: 10px;
+    }
+}
