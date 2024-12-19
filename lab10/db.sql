@@ -20,6 +20,23 @@ CREATE TABLE articles (
     ALTER TABLE articles ADD COLUMN image VARCHAR(255) DEFAULT NULL;
 
 );
+ CREATE TABLE comments (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    article_id INT NOT NULL,
+    user_id INT NOT NULL,
+    comment TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (article_id) REFERENCES articles(id),
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
+CREATE TABLE likes (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    article_id INT NOT NULL,
+    UNIQUE(user_id, article_id),
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+    FOREIGN KEY (article_id) REFERENCES articles(id) ON DELETE CASCADE
+);
 
 
 INSERT INTO users (username, password, email, role) 
